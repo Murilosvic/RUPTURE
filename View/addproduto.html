@@ -65,9 +65,18 @@
 <main>
   <section class="form-container">
     <aside class="image-section">
-      <img src="https://via.placeholder.com/100" alt="Pré-visualização da imagem" />
-      <button id="uploadBtn" type="button">Inserir imagem</button>
-    </aside>
+  <img id="previewImagem" src="https://via.placeholder.com/100" alt="Pré-visualização da imagem" />
+
+  <input 
+    type="file" 
+    id="imagemInput" 
+    name="imagem"
+    accept="image/*"
+    hidden
+  />
+
+  <button id="uploadBtn" type="button">Inserir imagem</button>
+</aside>
 
     <form class="product-form">
       
