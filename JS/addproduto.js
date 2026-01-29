@@ -3,6 +3,22 @@ const spanQuantidade = document.getElementById("quantidade");
 const radioEstoque = document.querySelectorAll('input[name="estoque"]');
 const btnDecrementar = document.querySelector('.quantity button:first-child');
 const btnIncrementar = document.querySelector('.quantity button:last-child');
+const uploadBtn = document.getElementById("uploadBtn");
+const imagemInput = document.getElementById("imagemInput");
+const preview = document.getElementById("previewImagem");
+
+uploadBtn.addEventListener("click", () => {
+    imagemInput.click();
+});
+
+imagemInput.addEventListener("change", () => {
+    const file = imagemInput.files[0];
+
+    if (file) {
+        preview.src = URL.createObjectURL(file);
+    }
+});
+
 
 function alterarQuantidade(valor) {
   // Verifica se o produto está marcado como sem estoque
