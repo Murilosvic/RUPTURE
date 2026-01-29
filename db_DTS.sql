@@ -1,4 +1,4 @@
-USE db_DTS;
+USE db_database;
 
 CREATE TABLE Produto(
     id_Produto INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
