@@ -40,7 +40,7 @@ if (window.location.href.indexOf("index") !== -1) {
 }
 else {
     cad_button.addEventListener("click", function() {
-        window.location.href  = "../View/cadastro.html";
+        window.location.href  = "/View/cadastro.html=";
     });
 
     log_button.addEventListener("click", function() {

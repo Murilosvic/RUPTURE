@@ -1,16 +1,16 @@
-js
-
 const form = document.getElementById("formCadastro");
+console.log(form);
 
-form.addEventListener("submiy", async (event) => {
+form.addEventListener("submit", async (event) => {
 event.preventDefault();
+alert("Úsuário Registrado!");
 
 const nome = document.getElementById("yourname").value;
 const email = document.getElementById("youremail").value;
 const senha = document.getElementById("yoursenha").value;
 
 try {
-const response = await fetch("https://localhost/RUPTURE/Controller/cadastro.php", {
+const response = await fetch("http://localhost/RUPTURE/Controller/cadastro.php", {
 
 method: "POST",
 
